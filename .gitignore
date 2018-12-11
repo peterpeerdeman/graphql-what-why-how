@@ -3,6 +3,6 @@
 log/*.log
 tmp/**
 node_modules/
-videos/partup-screendemo.mov
+videos/*
 .sass-cache
 *.swp

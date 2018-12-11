@@ -58,7 +58,7 @@
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
                 <section data-state="firstSlide" class="pp-title" data-background="images-theme/bg/bg-intro.jpg">
-                    <h1>GraphQL, Apollo and Optimistic UI updates</h1>
+                    <h1>GraphQL and Apollo</h1>
                     <div class="divider"></div>
                     <img src="images-theme/peter.png" alt="" width="204" height= "136">
                     <span class="block">
@@ -80,35 +80,44 @@
                             </g>
                         </g>
                     </svg>
-                    <h3>architect in online</h3>
+                    <h3>Digital decency</h3>
                 </section>
-                <section class="pp-title" data-background="images-theme/bg/bg-quote.jpg">
+                <section class="pp-title" data-background="images-theme/bg/bg-intro.jpg">
+                        <h3>Product Consulting</h3>
+                        <h3>Concept & Design</h3>
+                        <h3>Development</h3>
+                        <h3>Dev-ops</h3>
+                        <h3>Culture & Knowledge transfer</h3>
+                </section>
+                <section class="pp-title" data-background="images-theme/bg/bg-subject.jpg">
                     <h3>Context</h3>
                     <h2>"Building (big)</br> fullstack apps for our clients"</h2>
                 </section>
-                <section>
-                    <h2>Stack History</h2>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h2>History</h2>
                     <ul>
-                        <li class="fragment">PHP -> REST -> Angular 1.x</li>
-                        <li class="fragment">NodeJS -> REST -> Angular 1.x</li>
-                        <li class="fragment">Meteor -> DDP -> Blaze</li>
-                        <li class="fragment">Meteor -> GraphQL -> React</li>
-                        <li class="fragment">NodeJS -> GraphQL -> React</li>
+                        <li class="fragment">NodeJS</li>
+                        <li class="fragment">Meteor</li>
+                        <li class="fragment"><s>Meteor</s>Apollo</li>
+                        <li class="fragment">NodeJS</li>
+                        <li class="fragment">GraphQL</li>
                     </ul>
                 </section>
-                <section class="pp-title" data-background="images-theme/bg/bg-quote.jpg">
-                    <h3></h3>
-                    <h2>"We've got some experience with nonstandard API's"</h2>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <img style="float:right" src="images/apollographql.jpg" width=35% alt="">
+                    <span> </span>
+                    <img style="float:left" src="images/react.png" width=25% alt="">
+                    <img style="float:left" src="images/reactnative.png" width=25% alt="">
                 </section>
-                <section>
-                    <h3></h3>
+                <section class="pp-title" data-background="images-theme/bg/bg-quote.jpg">
                     <h2>"Back in the day, we wanted to be as RESTful as possible"</h2>
                 </section>
                 <section>
                     <h2>REST problems</h2>
                     <ul>
-                        <li class="fragment">embedded queries / parameter hacks</li>
-                        <li class="fragment">linking entities</li>
+                        <li class="fragment">nested data (call back hell)</li>
+                        <li class="fragment">embedded queries (random parameters)</li>
+                        <li class="fragment">responseformat (random contents)</li>
                         <li class="fragment">entityless methods with sideeffects</li>
                         <li class="fragment">documentation? <span class="fragment">(swagger was ok)</span></li>
                         <li class="fragment">versioning</li>
@@ -118,93 +127,179 @@
                     <h3>GraphQL?</h3>
                     <h2 class="fragment">"Query language</br> for API's"</h2>
                 </section>
-                <section>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <img  src="images/interface.png"  alt=""/>
+                </section>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
                     <img  src="images/rest.png" style="width:80%" alt=""/>
                 </section>
-                <section>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
                     <img  src="images/graphql-example.png" alt=""/>
                 </section>
-                <section>
-                    <h2>"We just went for it"</h2>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h3>Good standards need good tools</h3>
+                    <h2 class="fragment">Introducing GraphiQL<h2>
                 </section>
-                <section>
-                    <h2>Thanks guys 😅</h2>
-                    <img src="images/facebook.png" style="width:15%" alt=""/>
-                    <img src="images/github.png" style="width:15%" alt=""/>
-                    <img src="images/airbnb.png" style="width:15%" alt=""/>
-                    <img src="images/shopify.png" style="width:15%" alt=""/>
-                    <img src="images/pinterest.png" style="width:15%" alt=""/>
-                </section>
-                <section class="pp-title" data-background="images-theme/bg/bg-quote.jpg">
-                    <h2>Demo</h2>
-                    <h3>(GraphiQL toptaal)</h3>
-                </section>
-                <section>
-                    <h2>Highlights</h2>
-                    <ul>
-                        <li class="fragment">typed / auto documented API</li>
-                        <li class="fragment">linked data hydration by default</li>
-                        <li class="fragment">versioning by replacing/deprecating fields</li>
-                        <li class="fragment">easily consolidate microservices / legacy into 1 API</li>
-                        <li class="fragment">...</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>Great collaboration front- and backend</h2>
-                    <ul>
-                        <li class="fragment">documentation / handover</li>
-                        <li class="fragment">frontend writing stubs / contracts</li>
-                        <li class="fragment">apollo client (data management / caching) </li>
-                    </ul>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h4>graphql queries</h4>
+                    <video id="screendemo" controls="controls" autoplay name="screendemo" src="videos/graphiql-demo1-query.mov"></video>
                 </section>
 
-                <section class="pp-title" data-background="images-theme/bg/bg-quote.jpg">
-                    <h2>Demo</h2>
-                    <h3>(React / Lifely / Apollo Client code)</h3>
-                    <img src="images/toptaal.png" style="width:90%" alt=""/>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h2>Any frontend can write its own query 
+                    <div class="fragment">for exactly the data they need from the API</div></h2>
                 </section>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h4>graphql query vanilla javascript</h4>
+                    <pre>
+                        <code class="javascript fragment">
+var query = `query _($searchText: String) {
+  courseMaterials(searchText: $searchText)  {
+    _id
+    name
+  }
+}`;
+</code>
+<code class="javascript fragment">
+fetch(‘/api/graphql', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+  }, </code> <code class="javascript fragment">
+  body: JSON.stringify({
+    query,
+    variables: { searchText },
+  })
+})
+.then(r => r.json())
+.then(data => console.log('data returned:', data));
+                        </code>
+                    </pre>
+                </section>
+                <section class="pp-title" data-background="images-theme/bg/bg-title.jpg">
+                    <h2>What about <br/>manipulating data?</h2>
+                </section>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h4>graphql mutation</h4>
+                    <video id="screendemo2" controls="controls" autoplay name="screendemo" src="videos/graphiql-demo3-mutations.mov"></video>
+                </section>
+                <section class="pp-title" data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h4>graphql query using apollo & react</h4>
+                    <pre>
+                        <code class="javascript fragment">
+import gql from "graphql-tag";
+import { Query } from "react-apollo";
 
-                <section>
-                    <h2>Client code takeaways</h2>
-                    <ul>
-                        <li class="fragment">Bind GraphQL data to frontend components</li>
-                        <li class="fragment">Send mutations with GraphQL from frontend</li>
-                    </ul>
+const GET_COURSEMATERIALS_QUERY = gql`
+    query _($searchText: String) {
+        courseMaterials (searchText: $searchText) {
+            _id
+            name
+        }
+    }
+` </code>
+<code class="javascript fragment">
+const CourseMaterialsContainerComponent = () => (
+  &lt;Query query={GET_COURSEMATERIALS_QUERY}>
+</code>
+<code class="javascript fragment">
+    {({ loading, error, data }) => {
+      if (error) return &lt;Error />
+      if (loading) return &lt;Loading />;
+
+      return &lt;CourseMaterialList coursematerials={data.coursematerials} />
+    }}
+  &lt;/Query>
+)
+</code>
+                    </pre>
                 </section>
 
                 <section class="pp-title" data-background="images-theme/bg/bg-quote.jpg">
                     <h2>"Thats great, now show me something fancier"</h2>
                 </section>
 
-                <section>
-                    <h2>Introducing: Apollo advanced features</h2>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h2>Apollo advanced</h2>
                     <ul>
-                        <li class="fragment"><code>watchQuery()</code> - GraphQL subscription</li>
                         <li class="fragment"><code>pollInterval</code> - refresh data on interval</li>
-                        <li class="fragment"><code>prefetch</code> - fetch data on hover</li>
-                        <li class="fragment"><code>notifyOnNetworkStatusChange</code></li>
+                        <li class="fragment"><code>prefetching</code> - prefetch data on hover</li>
                         <li class="fragment"><code>fetchMore()</code> - clean pagination API</li>
                         <li class="fragment"><code>update</code> / <code>optimisticResponse</code></li>
+                        <li class="fragment"><code>subscribeToMore()</code> - GraphQL subscription</li>
                     </ul>
                 </section>
 
-                <section class="pp-title" data-background="images-theme/bg/bg-quote.jpg">
-                    <h2>Demo</h2>
-                    <h3>(Apollo optimistic UI)</h3>
-                    <a href="https://dev-blog.apollodata.com/tutorial-graphql-mutations-optimistic-ui-and-store-updates-f7b6b66bf0e2">https://dev-blog.apollodata.com/tutorial-graphql-mutations-optimistic-ui-and-store-updates-f7b6b66bf0e2</a>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h4>graphql subscriptions</h4>
+                    <pre>
+                        <code class="javascript">
+const paymentSubscription = gql`
+  subscription paymentAdded($paymentId: ID!) {
+    paymentAdded(paymentId: $paymentId) {
+      id
+      amount
+    }
+  }
+`
+</code>
+<code class="javascript fragment">
+interface Props {
+    paymentQueryResult: QueryResult&lt;PaymentQueryData, PaymentQueryVariables>
+}
+</code>
+<code class="javascript fragment">
+public componentDidMount() {
+    // Start subscription
+    paymentQueryResult.subscribeToMore({
+        document: paymentSubscription,
+        updateQuery: (prev, { paymentData }) => {
+            const { payment } = paymentData.data
+
+            // payment contains a realtime inserted new payment!
+            return mergeNewPaymentInQueryData(prev, [payment])
+        },
+    })
+}
+                    </code>
+                </pre>
                 </section>
 
-                <section>
-                    <h2>Apollo Takeaways</h2>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h2>GraphQL highlights</h2>
                     <ul>
-                        <li class="fragment">Binding GraphQL data to components</li>
-                        <li class="fragment">Options to cache and poll data</li>
-                        <li class="fragment">update and optimisticResponse for instant userfeedback</li>
-                        <li class="fragment">also works for ReactNative mobile development!</li>
+                        <li class="fragment">typed / auto documented API</li>
+                        <li class="fragment">linked data hydration by default</li>
+                        <li class="fragment">versioning by replacing/deprecating fields</li>
+                        <li class="fragment">easily consolidate microservices / legacy into 1 API</li>
+                        <li class="fragment">and...</li>
                     </ul>
+                </section>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h2>Great collaboration front- and backend</h2>
+                    <img src="images/high-five-horse.gif" width=80% alt="" />
+                </section>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h3>collaboration front- and backend</h3>
+                    <ul>
+                        <li class="fragment">documentation / handover</li>
+                        <li class="fragment">frontend help discussing API / contracts</li>
+                        <li class="fragment">apollo client (data management / caching) </li>
+                    </ul>
+                </section>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h3>Want to get started?</h3>
+                    <ul>
+                        <li class="fragment">howtographql.com tutorial by Prisma</li>
+                        <li class="fragment">advancedreact.com course by Wes Bos</li>
+                    </ul>
+                </section>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h3><a href="https://jobs.lifely.nl">jobs.lifely.nl</a></h3>
                 </section>
                 <section data-state="firstSlide" class="pp-title" data-background="images-theme/bg/bg-intro.jpg">
-                    <h1>GraphQL, Apollo and Optimistic UI updates</h1>
+                    <h1>GraphQL and Apollo</h1>
                     <div class="divider"></div>
                     <img src="images-theme/peter.png" alt="" width="204" height= "136">
                     <span class="block">
@@ -217,6 +312,7 @@
                             </g>
                         </g>
                     </svg>
+                    <a href="https://jobs.lifely.nl">jobs.lifely.nl</a>
                 </section>
 
                 <!--

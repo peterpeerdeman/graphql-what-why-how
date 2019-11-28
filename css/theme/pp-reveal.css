@@ -17,9 +17,10 @@ body {
   text-shadow: none; 
 }
 .reveal {
-  font-family:'Avenir Next', sans-serif;
+  font-family:'Aktiv Grotesk', sans-serif;
   font-size: 32px;
-  color: #435162;
+  /*color: #435162;*/
+  color: #000;
   line-height: 48px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,7 +40,7 @@ body {
 }
 .reveal ul li {
   margin-bottom: 24px;
-  background-image: url(../../images-theme/dot.svg);
+  background-image: url(../../images-theme/dot.png);
   background-repeat: no-repeat;
   background-position: 0px 14px;
   padding-left: 48px;  
@@ -67,7 +68,6 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 36px 0;
-  font-style: italic;
   font-weight:700;
 }
 .reveal h1,
@@ -83,8 +83,7 @@ body {
 .pp-title h1,
 .pp-title h2,
 .pp-title h3 {
-  color: #fff;
-  text-transform: uppercase;
+  color: #000;
 }
 .pp-title {
   text-align: center;
@@ -93,14 +92,14 @@ body {
   margin: 48px auto;
   width: 60px;
   height: 4px;
-  background-color: #6CF0EA;
+  background-color: rgb(255,107,107);
 }
 .pp-title .pp-title-logo-big {
   width:400px;
-  fill: #fff;
+  fill: #000;
 }
 .pp-title .pp-title--logo {
-  fill:white;
+  fill:#000;
   width: 135px;
   position: absolute;
   right: 84px;
@@ -129,11 +128,9 @@ body {
 .pp-title a:not(.image) {
   font-weight: 700;
   font-size: 24px;
-  font-style: italic;  
-  color: #fff;
+  color: #000;
   letter-spacing: 2.5px;
   text-decoration: none;
-  text-transform: uppercase;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   -ms-transition: color .15s ease;
@@ -148,7 +145,7 @@ body {
 }
 
 .reveal .roll span:after {
-  color: #fff;
+  color: #000;
   background: #25211c; }
 
 .reveal .block {
@@ -207,7 +204,7 @@ body {
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
-  background: #6CF0EA; 
+  background: rgb(255,107,107); 
   height: 6px
 }
 .reveal .controls div.navigate-right {

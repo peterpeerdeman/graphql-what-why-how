@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>GraphQL, Apollo and Subscriptions</title>
+        <title>GraphQL: what why and how</title>
 
         <meta name="description" content="GraphQL, Apollo and Subscriptions">
         <meta name="author" content="Peter Peerdeman">
@@ -58,7 +58,7 @@
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
                 <section data-state="firstSlide" class="pp-title" data-background="images-theme/bg/bg-intro.jpg">
-                    <h1>GraphQL, Apollo & Subscriptions<span style="color: rgb(255,107,107)">.</span></h1>
+                    <h1>GraphQL</h1><h1>What, Why and How<span style="color: rgb(255,107,107)">.</span></h1>
                     <img src="images-theme/peter.png" alt="" width="204">
 
                     <span class="block">
@@ -94,34 +94,36 @@
 </svg>
                         <video id="screendemo" controls="controls" autoplay name="screendemo" src="videos/lifely-office.mp4"></video>
                 </section>
-                <section class="pp-title" data-background="images/lifely-workflow.jpg">
-                </section>
                 <section class="pp-title" data-background="images-theme/bg/bg-intro.jpg">
                         <video id="screendemo" controls="controls" autoplay name="screendemo" src="videos/lifely-team.mp4"></video>
                 </section>
+                <section class="pp-title" >
+                    <img src="images/lifely-workflow.jpg" alt="" />
+                </section>
                 <section class="pp-title" data-background="images-theme/bg/bg-subject.jpg">
-                    <h2>"create fullstack apps<br/>with our clients"</h2>
+                    <h2>"building our <span style="color: rgb(255,107,107)">API's</span> with <span style="color: rgb(255,107,107)">GraphQL</span> has been <span style="color: rgb(255,107,107)">awesome</span>"</h2>
                 </section>
                 <section class="pp-title" data-background="images-theme/bg/bg-subject.jpg">
                     <img src="images/toptaal.png"  alt=""/>
-                    <p>TopTaal<br>(course planning and finance)</p>
+                    <p>TopTaal<br>(language course planning and finance)</p>
                 </section>
                 <section class="pp-title" data-background="images-theme/bg/bg-subject.jpg">
                     <img src="images/domaint.png"  alt=""/>
-                    <p>Defensie<br>(vehicle maintenance)</p>
+                    <p>Ministry of Defence<br>(vehicle maintenance app)</p>
                 </section>
                 <section class="pp-title" data-background="images-theme/bg/bg-subject.jpg">
                     <img src="images/ruler.png"  alt=""/>
-                    <p>Ruler<br>(compliance control) </p>
-                </section>
-                <section class="pp-title" data-background="images-theme/bg/bg-subject.jpg">
-                    <img src="images/kandidaatvinden-1.png" width="70%" alt=""/>
-                    <p>Kandidaatvinden<br>(live jobchat)</p>
+                    <p>Ruler<br>(compliance control SaaS) </p>
                 </section>
                 <section class="pp-title" data-background="images-theme/bg/bg-subject.jpg">
                     <img src="images/mistergreen.png"  alt=""/><br>
                     <img src="images/elanza.png"  alt=""/>
                 </section>
+
+                <section class="pp-invert" data-background="images-theme/bg/bg-invert.png">
+                    <h1>History<span style="color: rgb(255,107,107)">.</span></h1>
+                </section>
+
 
                 <section data-background="images-theme/bg/bg-screenshot.jpg">
                     <h2>History</h2>
@@ -141,6 +143,12 @@
                     <img style="float:left" src="images/react.png" width=25% alt="">
                     <img style="float:left" src="images/reactnative.png" width=25% alt="">
                 </section>
+
+
+                <section class="pp-invert" data-background="images-theme/bg/bg-invert.png">
+                    <h1>Why<span style="color: rgb(255,107,107)">.</span></h1>
+                </section>
+
                 <section class="pp-title" data-background="images-theme/bg/bg-quote.jpg">
                     <h2>"Back in the day, we wanted to be as RESTful as possible"</h2>
                 </section>
@@ -222,6 +230,11 @@ POST /api/v4/user/yeahsureilldoitagain
                         <li class="fragment">versioning</li>
                     </ul>
                 </section>
+
+                <section class="pp-invert" data-background="images-theme/bg/bg-invert.png">
+                    <h1>What<span style="color: rgb(255,107,107)">.</span></h1>
+                </section>
+
                 <section class="pp-title" data-background="images-theme/bg/bg-quote.jpg">
                     <h3>GraphQL?</h3>
                     <h2 class="fragment">"Query language</br> for API's"</h2>
@@ -252,7 +265,6 @@ POST /api/v4/user/yeahsureilldoitagain
                     <h4>graphiql (graphql exploration tool)</h4>
                     <video id="screendemo" controls="controls" autoplay name="screendemo" src="videos/graphiql-demo1-query.mov"></video>
                 </section>
-
 
                 <section data-background="images-theme/bg/bg-screenshot.jpg">
                     <h2>Any <span style="color: rgb(255,107,107)">frontend</span> can write its own <span style="color: rgb(255,107,107)">query</span>
@@ -392,11 +404,64 @@ function DontReadTheComments({ repoFullName }) {
                 </pre>
                 </section>
 
-                <section class="pp-title" data-background="images-theme/bg/bg-subject.jpg">
+                <section class="pp-invert" data-background="images-theme/bg/bg-invert.png">
+                    <h1>How<span style="color: rgb(255,107,107)">.</span></h1>
+                </section>
+
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
                     <section>
-                        <img src="images/kandidaatvinden-1.png" width="70%" alt=""/>
-                        <h3>peter, get on with the demo already</h3>
+                        <h3>GraphQL ...</h3>
+                        <h2>As Integration Layer</h2>
                     </section>
+                    <section>
+                        <h3>HvA Student App</h3>
+                        <p>integrating both direct database and legacy REST calls</p>
+                        <img src="images/hva-0.png" alt=""  />
+                    </section>
+                    <section>
+                        <img src="images/hva-possible-graphql-architecture.png" alt="" />
+                    </section>
+                </section>
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <section>
+                        <h3>GraphQL ...</h3>
+                        <h2>as micro-API for </br>existing SSR app</h2>
+                    </section>
+                    <section>
+                        <h3>Yearn Recruitment</h3>
+                        <p>Legacy Python app with GraphQL layer replicating legacy pages</p>
+                        <img src="images/yearn.png" alt="" width="70%" />
+                    </section>
+                    <section>
+                        <img src="images/yearn-architecture-2017-v3.png" alt="" />
+                    </section>
+                </section>
+
+                <section class="pp-title" data-background="images-theme/bg/bg-intro.jpg">
+                    <h2>"But what about big corporate environments?"</h2>
+                </section>
+
+                <section  data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h2>KLM case</h2>
+                    <h3>"Large Scale Web Apps on GraphQL"</h3>
+                    <img src="images/klm-talk.png" style="width:60%" alt=""/>
+                    <a href="https://www.youtube.com/watch?v=T2njjXHdKqw">https://www.youtube.com/watch?v=T2njjXHdKqw</a>
+                </section>
+
+                <section  data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h3>KLM GraphQL architecture</h3>
+                    <img src="images/klm-architecture.png" alt="" />
+                </section>
+
+                <section data-background="images-theme/bg/bg-screenshot.jpg">
+                    <h2>GraphQL at KLM</h2>
+                    <ul>
+                        <li class="fragment">4 services, 4 servers, 4 GraphQL API's</li>
+                        <li class="fragment">independant service scaling</li>
+                        <li class="fragment">ensures you get only the data you need</li>
+                        <li class="fragment">reduces network traffic</li>
+                        <li class="fragment">shared types published as npm packages</li>
+                    </ul>
                 </section>
 
                 <section data-background="images-theme/bg/bg-screenshot.jpg">

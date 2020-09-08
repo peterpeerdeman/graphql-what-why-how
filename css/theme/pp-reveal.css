@@ -144,6 +144,10 @@ body {
   border: none; 
 }
 
+.pp-invert h1 {
+  color: #fff;
+}
+
 .reveal .roll span:after {
   color: #000;
   background: #25211c; }
